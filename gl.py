@@ -9,7 +9,6 @@ V2 = namedtuple('Point2', ['x', 'y'])
 V3 = namedtuple('Point3', ['x', 'y', 'z'])
 V4 = namedtuple('Point4', ['x', 'y', 'z', 'w'])
 
-
 def char(c):
     # 1 byte
     return struct.pack('=c', c.encode('ascii'))
