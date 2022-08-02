@@ -22,3 +22,13 @@ def IdentityOp(a):
             else:
                 matrix[i].append(0)
     return matrix
+
+def MV(M, V):
+    matriz = []
+    for fila in M:
+        res = 0
+        for col in range(len(fila)):
+            res += (fila[col]*V[col])
+        matriz.append(res)
+    return matriz
+

@@ -280,8 +280,7 @@ class Renderer(object):
     def glTransform(self, vertex, matrix):
 
         v = V4(vertex[0], vertex[1], vertex[2], 1)
-        vt = np.matrix(matrix) @ v
-        vt = vt.tolist()[0]
+        vt = glmath.MV(matrix, v)
         vf = V3(vt[0] / vt[3],
                 vt[1] / vt[3],
                 vt[2] / vt[3])
