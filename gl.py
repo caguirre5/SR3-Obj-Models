@@ -1,6 +1,5 @@
 import struct
 from collections import namedtuple
-import numpy as np
 import random
 import glmath
 from math import cos, sin, pi
